@@ -4,7 +4,7 @@
 
 利用github pages功能和github api, 用github仓库的issue区作为数据库, 
 
-用vue和webpack搭建的个人博客
+用vue和webpack搭建的个人博客, 博客[地址](https://ximothorn.github.io)
 
 ## Build Setup
 
