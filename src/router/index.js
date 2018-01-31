@@ -1,9 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import index from '@/components/index'
-import article from '@/components/article'
-import focus from '@/components/focus'
-import articleDetail from '@/components/articleDetail'
+// import index from '@/components/index'
+// import article from '@/components/article'
+// import focus from '@/components/focus'
+// import articleDetail from '@/components/articleDetail'
+
+// 组件的懒加载
+const index = () => import('@/components/index')
+const article = () => import('@/components/article')
+const focus = () => import('@/components/focus')
+const articleDetail = () => import('@/components/articleDetail')
 
 Vue.use(Router)
 
