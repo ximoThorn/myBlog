@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "hakuyoxingshu7000";
+  src: url("hakuyoxingshu7000.woff2") format("woff2"),
+       url("hakuyoxingshu7000.woff") format("woff"),
+       url("hakuyoxingshu7000.ttf") format("truetype"),
+       url("hakuyoxingshu7000.eot") format("embedded-opentype"),
+       url("hakuyoxingshu7000.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

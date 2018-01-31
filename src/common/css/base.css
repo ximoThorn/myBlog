@@ -1,0 +1,188 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    -webkit-backface-visibility: hidden;
+    text-decoration: none;
+}
+
+
+/* ul,
+ol,
+li {
+    list-style: none;
+} */
+
+
+/*
+*input type=number时的上下箭头兼容问题
+*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+
+input::-ms-outer-spin-button,
+input::-ms-inner-spin-button {
+    -ms-appearance: none !important;
+    margin: 0;
+}
+
+input::-o-outer-spin-button,
+input::-o-inner-spin-button {
+    -o-appearance: none !important;
+    margin: 0;
+}
+
+input::-moz-outer-spin-button,
+input::-moz-inner-spin-button {
+    -moz-appearance: none !important;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield !important;
+}
+
+input {
+    outline: none;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+body {
+    background-color: #f4f5f5;
+}
+
+.icon {
+    width: 36px;
+    height: 36px;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
