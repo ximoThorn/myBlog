@@ -63,7 +63,7 @@ export default {
       this.articleList = []
       this.flag = false
       this.parameter.labels = ''
-      this.parameter.per_page = 20
+      this.parameter.per_page = 2
       this.parameter.page = 1
     },
     _getArtilceData () {
@@ -83,9 +83,12 @@ export default {
         _this.flag = true
         _this.articleList = _this.articleList.concat(re.data)
         // 获取页面的高度，加setTimeout是因为必须是data渲染成dom后才能获取正确的值
-        setTimeout(() => {
+        _this.$nextTick(() => {
           _this.docScrollObj.docBodyHeight = document.body.clientHeight
-        }, 0)
+        })
+        // setTimeout(() => {
+        //   _this.docScrollObj.docBodyHeight = document.body.clientHeight
+        // }, 0)
       }).catch(() => {
         this.$Progress.fail()
       })
@@ -122,9 +125,12 @@ export default {
 
         _this._backBarLeft(ty)
         // 获取页面的高度，加setTimeout是因为必须是data渲染成dom后才能获取正确的值
-        setTimeout(() => {
+        _this.$nextTick(() => {
           _this.docScrollObj.docBodyHeight = document.body.clientHeight
-        }, 0)
+        })
+        // setTimeout(() => {
+        //   _this.docScrollObj.docBodyHeight = document.body.clientHeight
+        // }, 0)
       })).catch(() => {
         _this.$Progress.fail()
       })
@@ -160,6 +166,7 @@ export default {
     windowScroll () {
       const _this = this
       window.addEventListener('scroll', () => {
+        console.log(_this.docScrollObj.docBodyHeight)
         if (_this.docScrollObj.docBodyHeight <= _this.docScrollObj.docInnerHeight || _this.docScrollObj.flag) {
           return
         }
